@@ -61,7 +61,7 @@ df_hungry_ages = pd.read_sql("""SELECT name, age, hungry FROM dogs WHERE age >= 
 # STEP 8
 # Replace None with your code
 df_4_oldest = pd.read_sql("""SELECT name, age, breed FROM(SELECT name, age, breed FROM dogs ORDER BY age DESC LIMIT 4) AS oldest ORDER BY breed""", conn2)
-print(df_4_oldest)
+#print(df_4_oldest)
 
 ##### Part 4: Aggregation #####
 
